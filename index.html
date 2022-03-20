@@ -8,18 +8,55 @@
   
   <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js"defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
+<main class="container">
+  <section class="calculator">
+    <div class="header">
+      <h2>calc</h2>
+      <div class="theme-wrapper">
+        <div class="upper">
+          <span>1</span><span>2</span><span>3</span>
+        </div>
+        <div class="lower">
+          <span>THEME</span>
+          <div class="toggle">
+            <div class="toggle-gfx active"></div>
+            <div class="toggle-gfx"></div>
+            <div class="toggle-gfx"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">123,123</div>
+    <div class="keys">
+      <button class="key" data-key="int">7</button>
+      <button class="key" data-key="int">8</button>
+      <button class="key" data-key="int">9</button>
+      <button class="key alt-clr" data-key="del">DEL</button>
+      <button class="key" data-key="int">4</button>
+      <button class="key" data-key="int">5</button>
+      <button class="key" data-key="int">6</button>
+      <button class="key" data-key="operator" data-operator="+">+</button>
+      <button class="key" data-key="int">1</button>
+      <button class="key" data-key="int">2</button>
+      <button class="key" data-key="int">3</button>
+      <button class="key" data-key="operator" data-operator="-">-</button>
+      <button class="key" data-key="comma">.</button>
+      <button class="key" data-key="int">0</button>
+      <button class="key" data-key="operator" data-operator="/">/</button>
+      <button class="key" data-key="operator" data-operator="*">x</button>
+      <button class="key left alt-clr" data-key="reset">RESET</button>
+      <button class="key right equal" data-key="calc">=</button>
+    </div>
+  </section>
+</main>
 
   
   <div class="attribution">
